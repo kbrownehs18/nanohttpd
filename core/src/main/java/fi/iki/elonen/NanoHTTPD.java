@@ -683,6 +683,7 @@ public abstract class NanoHTTPD {
                     decodeParms(uri.substring(qmi + 1), parms);
                     uri = decodePercent(uri.substring(0, qmi));
                 } else {
+                    queryParameterString = "";
                     uri = decodePercent(uri);
                 }
 
